@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rotaer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".Rotaer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/container_fundo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editIcaoCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o código ICAO"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/btbuscarotaer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_opt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btbuscarotaer"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="374dp"
+            android:layout_marginBottom="296dp"
+            android:backgroundTint="@color/blue"
+            android:padding="15dp"
+            android:text="Consultar ROTAER"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/select_opt"
+            android:layout_width="304dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="12dp"
+            android:text="Digite o código ICAO da localidade"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ATCOlogo" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="387dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="184dp"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ATCOlogo"
+            android:layout_width="166dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="96dp"
+            android:src="@drawable/atcocomp1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
