@@ -28,7 +28,6 @@ class Metar : AppCompatActivity() {
         val txtResultado = findViewById<TextView>(R.id.txtResultado)
 
         btBuscaMetar.setOnClickListener {
-            // Esconde o teclado
             esconderTeclado()
 
             val icaoCode = editIcaoCode.text.toString().uppercase()

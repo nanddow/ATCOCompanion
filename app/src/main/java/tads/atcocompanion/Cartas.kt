@@ -24,14 +24,12 @@ class Cartas : AppCompatActivity() {
                 val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
                 inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
                 txtResultado.text = "Buscando Cartas..."
-                buscarCartas(icaoCode, txtResultado)
+
             } else {
                 txtResultado.text = "Por favor, insira um código ICAO válido."
             }
         }
     }
 
-    private fun buscarCartas(icaoCode: String, txtResultado: TextView) {
 
-    }
 }

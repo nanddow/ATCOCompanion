@@ -13,10 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-        <View
+    <View
         android:id="@+id/containerLogin"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_width="387dp"
+        android:layout_height="510dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/container_login"
@@ -27,24 +27,24 @@
         app:layout_constraintVertical_bias="0.498" />
 
 
-       <ImageView
+    <ImageView
         android:id="@+id/ATCOlogo"
         android:layout_width="166dp"
         android:layout_height="150dp"
-        android:layout_marginTop="268dp"
         android:src="@drawable/atcocomp1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/containerLogin" />
 
-        <TextView
+    <TextView
         android:id="@+id/txtDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your credentials"
+        android:text="Insira suas credenciais"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/ATCOlogo"
         app:layout_constraintStart_toStartOf="@id/ATCOlogo"
         app:layout_constraintTop_toBottomOf="@id/ATCOlogo"
@@ -59,10 +59,12 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/container_edit_text_login"
-        android:hint="Username"
+        android:hint="Usuário"
+          android:textColorHint="@color/cardview_dark_background"
         android:inputType="text"
         android:maxLines="1"
         android:padding="15dp"
+          android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerLogin"
         app:layout_constraintStart_toStartOf="@id/containerLogin"
         app:layout_constraintTop_toBottomOf="@id/txtDesc" />
@@ -75,10 +77,12 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/container_edit_text_login"
-        android:hint="Password"
+        android:hint="Senha"
+            android:textColorHint="@color/cardview_dark_background"
         android:inputType="textPassword"
         android:maxLines="1"
         android:padding="15dp"
+            android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerLogin"
         app:layout_constraintStart_toStartOf="@id/containerLogin"
         app:layout_constraintTop_toBottomOf="@id/editUsername" />
@@ -90,7 +94,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
-        android:text="Forget your password?"
+        android:text="Esqueceu sua senha?"
         android:textColor="@color/blue"
         android:textSize="18sp"
         android:textStyle="bold"
