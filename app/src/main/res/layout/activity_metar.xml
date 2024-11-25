@@ -8,7 +8,6 @@
     android:background="@drawable/appbackground"
     tools:context=".Metar">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/containerLogin"
         android:layout_width="match_parent"

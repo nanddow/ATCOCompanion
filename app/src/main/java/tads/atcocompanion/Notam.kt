@@ -37,7 +37,7 @@ class Notam : AppCompatActivity() {
     private fun buscarNotam(icaoCode: String, txtResultado: TextView) {
         val client = OkHttpClient()
         val url = "https://applications.icao.int/dataservices/api/notams-realtime-list" +
-                "?api_key=e32a2784-156e-4ceb-bd77-85117e071987" +
+                "?api_key=02d830a7-7741-4fa8-ae6b-e2b4b15ba9cf" +
                 "&format=json" +
                 "&locations=$icaoCode"
 

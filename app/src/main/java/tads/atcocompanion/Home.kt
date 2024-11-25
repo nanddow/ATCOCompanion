@@ -37,7 +37,8 @@ class Home : AppCompatActivity() {
 
         btRotaer = findViewById(R.id.btRotaer)
         btRotaer.setOnClickListener {
-            Toast.makeText(this, "Função em desenvolvimento", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Rotaer::class.java)
+            startActivity(intent)
         }
 
 

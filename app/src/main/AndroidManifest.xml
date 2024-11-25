@@ -18,11 +18,13 @@
         <activity
             android:name=".Notam"
             android:exported="false"
-            android:theme="@style/Theme.ATCOCompanion" />
+            android:theme="@style/Theme.ATCOCompanion"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".Metar"
             android:exported="false"
-            android:theme="@style/Theme.ATCOCompanion" />
+            android:theme="@style/Theme.ATCOCompanion"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".Home"
             android:exported="false" />
@@ -31,7 +33,9 @@
             android:exported="false" />
         <activity
             android:name=".Rotaer"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.ATCOCompanion"
+            android:windowSoftInputMode="adjustPan"/>
 
         <activity
             android:name=".MainActivity"
